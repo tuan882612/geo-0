@@ -1,0 +1,9 @@
+services:
+  user-service:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - assets/env/.env
+    ports:
+      - "8000:8000"
